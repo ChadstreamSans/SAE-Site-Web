@@ -1,0 +1,187 @@
+body {
+    background-color :#505345;
+}
+
+#lesPrimes{
+    width: 100%;
+}
+
+#titleSquare {
+    background-color: #FAF7E6;
+    height: 30em;
+    width: 100em;
+    border-radius: 80px;
+    line-height: 1px;
+    margin: auto;
+    margin-top: 5em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titre1{
+    color: #3E3E3E;
+    font-size: 48px;
+    margin: 0em;
+}
+
+#titre2{
+    color: #3E3E3E;
+    font-size: 175px;
+    margin-top: 1em;
+}
+
+#titre3{
+    color: #3E3E3E;
+    font-size: 48px;
+    margin: 0em;
+}
+
+#titre4{
+    color: #3E3E3E;
+    font-size: 28px;
+    margin: 2em;
+    margin-bottom: 0em;
+}
+
+#titleSquare2 {
+    background-color: #FAF7E6;
+    height: 5em;
+    width: 10em;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titreSecond1{
+    color: #3E3E3E;
+    font-size: 48px;
+    margin: 0em;
+}
+
+#mainSquareBackground {
+    background-color: #505345;
+    height: 40em;
+    width: 115em;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainSquare {
+    background-color: #85934F;
+    height: 40em;
+    width: 115em;
+    border-radius: 35px;
+    margin: auto;
+    position: absolute;
+    rotate: 55deg ;
+    display: flex;
+
+    align-items: center;
+}
+
+#mainSquare2 {
+    background-color: #FAF7E6;
+    height: 31em;
+    width: 110em;
+    border-radius: 35px;
+    margin: auto;
+    rotate: 55deg ;
+    position: relative;
+    bottom: 5em; left: 7em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#mainSquareSupport {
+    height: 40em;
+    width: 115em;
+    border-radius: 35px;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titre{
+    color: #3E3E3E;
+    font-size: 48px;
+    margin: 0em;
+}
+
+.carte{
+    width: 16em;
+}
+
+#miniMainSquareMammouth{
+    background-color: #7D4728;
+    rotate: -55deg ;
+    width: 16em;
+    padding: 1em;
+    border-radius: 35px;
+}
+
+#miniMainSquareKebab{
+    background-color: #AD6E44;
+    rotate: -55deg ;
+    width: 16 em;
+    padding: 1em;
+    border-radius: 35px;
+}
+  
+#miniMainSquareCapybara{
+    background-color: #50402D;
+    rotate: -55deg ;
+    width: 16 em;
+    padding: 1em;
+    border-radius: 35px;
+}
+
+#mainSquareTriangle1{
+    background-color: #4F6F3B;
+    height: 35em;
+    width: 25em;
+    border-radius: 35px;
+    margin-top: 5em;
+    position: relative;
+    left: 65%;
+}
+
+#mainSquareTriangle2{
+    background-color: #4F6F3B;
+    height: 35em;
+    width: 25em;
+    border-radius: 35px;
+    margin-bottom: 5em;
+    position: sticky;
+    left: 20%;
+}
+
+#triangleBlocker1{
+    background-color: #505345;
+    height: 25em;
+    width: 55em;
+    rotate: 55deg ;
+    position: relative;
+    top: 17.5em; right:22.5em;
+}
+
+#triangleBlocker2{
+    background-color: #505345;
+    height: 19em;
+    width: 55em;
+    rotate: 55deg ;
+    position: relative;
+    top: 5em; right:5em;
+}
