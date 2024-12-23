@@ -1,0 +1,896 @@
+body {
+    background-color: #dad6c5;
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+
+a:visited {
+    text-decoration: none;
+ }
+
+#pageHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#kebabHeader{
+    width: 100%;
+}
+
+#menu{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHorizontalLine{
+    background-color: #36261F;
+    height: 1em;
+    width: 100%;
+}
+
+#menuContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuVerticalLine{
+    background-color: #36261F;
+    width: 1em;
+    margin: 0;
+}
+
+.menuText{
+    color: #36261F;
+    font-size: 2.9em;
+    margin: 0;
+}
+
+.menuText:hover {
+    color: #964B00;
+}
+
+#ancrage{
+    background-color: #68883D;
+    border-radius: 40px;
+    height: 12em;
+    width: 9.5em;
+    position: sticky;
+    top: 0;
+    left: 90%;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ancrage:hover{
+    background-color: #964B00;
+}
+
+#fleche{
+    background-color: #FAF7E6;
+    height: 6em;
+    width: 1em;
+}
+
+#teteDroiteFleche{
+    background-color: #FAF7E6;
+    height: 3em;
+    width: 1em;
+    rotate: 55deg;
+    position: relative;
+    bottom: 1.3em;
+    right: 0.95em;
+}
+
+#teteGaucheFleche{
+    background-color: #FAF7E6;
+    height: 3em;
+    width: 1em;
+    rotate: -55deg;
+    position: relative;
+    bottom: 4.3em;
+    left: 0.95em;
+}
+
+#settings{
+    background-color: #AD6E44;
+    padding: 1em;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+#squareAbou {
+    background-color: #68883D;
+    border-radius: 35px;
+    height: 5em;
+    width: 15em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    position: relative;
+    left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#texteAbou{
+    color: #FAF7E6;
+    font-size: 2.5em;
+}
+
+#squareAbou:hover{
+    background-color: #964B00;
+}
+
+#squareLangue{
+    background-color: #68883D;
+    border-radius: 35px;
+    height: 20em;
+    width: 18em;
+    position: relative;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#langueTitre{
+    color: #FAF7E6;
+    font-size: 3.5em;
+    margin: 0.2em;
+}
+
+.langueChoix{
+    color: #FAF7E6;
+    font-size: 2.5em;
+    margin: 0.2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.langueChoix:hover{
+    background-color: #964B00;
+}
+
+.langueSeparateur{
+    background-color: #FAF7E6;
+    border-radius: 35px;
+    height: 0.3em;
+    width: 15em;
+    margin: 0.2em;
+}
+
+#titleSquare1{
+    background-color: #AD6E44;
+    height: 15em;
+    width: 46em;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 3em;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1{
+    color: #FAF7E6;
+    font-size: 170px;
+}
+
+#titleSquare2{
+    background-color: #964B00;
+    height: 10em;
+    width: 37em;
+    border-radius: 50px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    bottom: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.title2{
+    color: #FAF7E6;
+    font-size: 28px;
+    position: relative;
+    top: 0.7em;
+}
+
+#titleSquare3{
+    background-color: #AD6E44;
+    height: 10em;
+    width: 30em;
+    border-radius: 50px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    bottom: 14.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#squareQEI{
+    display: flex;
+    flex-direction: row;
+}
+
+#squareQEISupport{
+    background-color: #68883D;
+    height: 65em;
+    width: 5em;
+}
+
+#squareQEIBody{
+    background-color: #68883D;
+    border-radius: 50px;
+    height: 65em;
+    width: 42em;
+    position: relative;
+    right: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleQEI{
+    color: #FAF7E6;
+    font-size: 96px;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+#cardFrame{
+    background-color: #C2C9A7;
+    border-radius: 50px;
+    height: 50em;
+    width: 33em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 30em;
+}
+
+.subtitleQEI{
+    color: #FAF7E6;
+    font-size: 40px;
+    text-align: center;
+    width: 14em;
+}
+
+#squarePQ{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15em;
+    z-index: 2;
+}
+
+#squarePQSupport{
+    background-color: #68883D;
+    height: 72em;
+    width: 5em;
+    z-index: 2;
+}
+
+#squarePQBody{
+    background-color: #68883D;
+    border-radius: 50px;
+    height: 72em;
+    width: 52em;
+    position: relative;
+    right: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+#textFramePQ{
+    background-color: #964B00;
+    border-radius: 50px;
+    height: 61em;
+    width: 47em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.textPQ{
+    color: #FAF7E6;
+    font-size: 48px;
+    width: 14.8em;
+    z-index: 2;
+}
+
+#squareFK{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+    z-index: 2;
+}
+
+#squareFKSupport{
+    background-color: #68883D;
+    height: 33.2em;
+    width: 5em;
+    z-index: 2;
+}
+
+#squareFKBody{
+    background-color: #68883D;
+    border-radius: 50px;
+    height: 33.2em;
+    width: 50.7em;
+    position: relative;
+    right: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+#titleFK{
+    color: #FAF7E6;
+    font-size: 96px;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+#frameFK{
+    background-color: #C2C9A7;
+    border-radius: 80px;
+    height: 17em;
+    width: 31.5em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#frameButtonFK{
+    background-color: #0E1210;
+    border-radius: 80px;
+    height: 14em;
+    width: 28em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#backgroundFK{
+    background-color: #964B00;
+    border-radius: 50px;
+    height: 11em;
+    width: 24.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#textFurkhan{
+    color: #FAF7E6;
+    font-size: 50px;
+    margin: 0;
+    z-index: 2;
+}
+
+#imageFurkhan{
+    margin: 0;
+    width: 7em;
+    z-index: 2;
+}
+
+#frameButtonFK:hover {
+    transform: scale(1.08);
+}
+
+#theKebabBody{
+    width: 67.5em;
+    position: relative;
+    bottom: 200em;
+    left: 39vw;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#skewer1{
+    background-color: #CDCDCD;
+    border-radius: 50%;
+    height: 5em;
+    width: 6.25em;
+    z-index: 29;
+}
+
+#skewer2{
+    background-color: #ACACAC;
+    border-radius: 45px;
+    height: 20em;
+    width: 6.25em;
+    z-index: 28;
+    position: relative;
+    bottom: 4.8em;
+}
+
+#theKebab1{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 11.5em;
+    width: 67.5em;
+    z-index: 27;
+    position: relative;
+    bottom: 11.5em;
+}
+
+#theKebab2{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 26;
+    position: relative;
+    bottom: 15.35em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab3{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 25;
+    position: relative;
+    bottom: 19.2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab4{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 24;
+    position: relative;
+    bottom: 23.05em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab5{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 23;
+    position: relative;
+    bottom: 26.9em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab6{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 22;
+    position: relative;
+    bottom: 30.75em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab7{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 67.5em;
+    z-index: 21;
+    position: relative;
+    bottom: 34.6em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab8{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 64.43em;
+    z-index: 20;
+    position: relative;
+    bottom: 38.45em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab9{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 64.43em;
+    z-index: 19;
+    position: relative;
+    bottom: 42.3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab10{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 61.5em;
+    z-index: 18;
+    position: relative;
+    bottom: 46.15em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab11{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 61.5em;
+    z-index: 17;
+    position: relative;
+    bottom: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab12{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 58.7em;
+    z-index: 16;
+    position: relative;
+    bottom: 53.85em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab13{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 58.7em;
+    z-index: 15;
+    position: relative;
+    bottom: 57.7em;
+}
+
+#theKebab14{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 56.03em;
+    z-index: 14;
+    position: relative;
+    bottom: 61.55em;
+}
+
+#theKebab15{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 56.03em;
+    z-index: 13;
+    position: relative;
+    bottom: 65.4em;
+}
+
+#theKebab16{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 53.48em;
+    z-index: 12;
+    position: relative;
+    bottom: 69.25em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab17{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 53.48em;
+    z-index: 11;
+    position: relative;
+    bottom: 73.1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab18{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 51.05em;
+    z-index: 10;
+    position: relative;
+    bottom: 76.95em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab19{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 51.05em;
+    z-index: 9;
+    position: relative;
+    bottom: 80.8em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab20{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 51.05em;
+    z-index: 8;
+    position: relative;
+    bottom: 84.65em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab21{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 51.05em;
+    z-index: 7;
+    position: relative;
+    bottom: 88.5em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab22{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 51.05em;
+    z-index: 6;
+    position: relative;
+    bottom: 92.35em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab23{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 48.73em;
+    z-index: 5;
+    position: relative;
+    bottom: 96.2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab24{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 48.73em;
+    z-index: 4;
+    position: relative;
+    bottom: 100.05em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab25{
+    background-color: #AD6E44;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 48.73em;
+    z-index: 3;
+    position: relative;
+    bottom: 103.9em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#theKebab26{
+    background-color: #964B00;
+    border-radius: 45px;
+    height: 7.7em;
+    width: 48.73em;
+    z-index: 2;
+    position: relative;
+    bottom: 107.75em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#skewer3{
+    background-color: #ACACAC;
+    border-radius: 45px;
+    height: 20em;
+    width: 6.25em;
+    z-index: 1;
+    position: relative;
+    bottom: 118em;
+}
+
+.textKebab{
+    color: #FAF7E6;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+#squareTunisien{
+    margin-top: 15em;
+    position: relative;
+    bottom: 329em;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#squareTunisienSupport{
+    background-color: #68883D;
+    height: 65em;
+    width: 5em;
+}
+
+#squareTunisienBody{
+    background-color: #68883D;
+    border-radius: 50px;
+    height: 65em;
+    width: 52em;
+    position: relative;
+    left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titleTunisien{
+    color: #FAF7E6;
+    font-size: 96px;
+    width: 7em;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#frameTunisien {
+    background-color: #C2C9A7;
+    border-radius: 50px;
+    height: 38em;
+    width: 33em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundTunisien {
+    background-color: #36261F;
+    height: 32em;
+    width: 27em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageTunisien {
+    width: 25em;
+}
+
+#quoteTunisien{
+    color: #FAF7E6;
+    font-size: 40px;
+    margin-bottom: 0.2em;
+}
+
+#sourceTunisien{
+    color: #FAF7E6;
+    font-size: 32px;
+    margin-top: 0;
+    position: relative;
+    left: 4em;
+}
+
+#arrowBody{
+    background-color: #36261F;
+    height: 10em;
+    width: 0.5em;
+    margin-left: 3em;
+    position: relative;
+    bottom: 325em;
+}
+
+#arrowLeftHead{
+    background-color: #36261F;
+    height: 2em;
+    width: 0.5em;
+    rotate: 45deg;
+    position: relative;
+    top: 8.5em;
+    left: 0.54em;
+}
+
+#arrowRightHead{
+    background-color: #36261F;
+    height: 2em;
+    width: 0.5em;
+    rotate: -45deg;
+    position: relative;
+    top: 6.5em;
+    right: 0.54em;
+}
+
+#giftContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 500em;
+}
+
+#gift{
+    width: 15em; 
+}
