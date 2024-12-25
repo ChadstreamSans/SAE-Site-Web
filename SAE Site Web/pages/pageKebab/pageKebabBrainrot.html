@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="icon" href="../../images/imagesKebab/favicon.ico">
+		<title>kebabo</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Oliver Gudenschwager">
+        <meta name="description" content="French light mode of the Kebab page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link id="theme" rel="stylesheet" type="text/css" href="../../css/pageKebab/pageKebab.css">
+	</head>
+	<body>
+        <div id="kebabHeader"></div>
+        <div id="pageHeader">
+            <div id="menu">
+                <div class="menuHorizontalLine"></div>
+                <div id="menuContent">
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pagePrincipale/pagePrincipale.html">
+                        <p class="menuText">L’extraordinaire catalogue d’Animaux Fantastiques</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pageMammouth/pageMammouth.html">
+                        <p class="menuText">prout mammouth</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pageCapybara/pageCapybara.html">
+                        <p class="menuText">Le Capybara de l’ABYSSE</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
+                </div>
+                <div class="menuHorizontalLine"></div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="ancrage">
+            <div id="fleche">
+                <div id="teteDroiteFleche"></div>
+                <div id="teteGaucheFleche"></div>
+            </div>
+        </button>
+        <script>
+            let mybutton = document.getElementById("ancrage");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        <div id="settings">
+			<div id="squareLangue">
+				<p id="langueTitre">long:</p>
+				<a href="pageKebab.html">
+					<p class="langueChoix">frensé</p>
+				</a>
+				<div class="langueSeparateur"></div>
+				<a href="pageKebabPaella.html">
+					<p class="langueChoix">au lait!</p>
+				</a>
+				<div class="langueSeparateur"></div>
+				<a href="pageKebabBrainrot.html">
+					<p class="langueChoix">skibidi rizz</p>
+				</a>
+			</div>
+			<div id="squareAbou">
+                <button class="buttonTheme" onclick="toggleThemeLight()">cringe abou</button>
+                <script>
+                    function toggleThemeLight() {
+                        let theme = document.getElementById('theme');
+
+                        if (theme.getAttribute('href') == '../../css/pageKebab/pageKebabAbou.css') {
+                            theme.setAttribute('href', '../../css/pageKebab/pageKebab.css');
+                        }
+                    }
+                </script>
+                <button class="buttonTheme" onclick="toggleThemeDark()">chad abou</button>
+                <script>
+                    function toggleThemeDark() {
+                        let theme = document.getElementById('theme');
+
+                        if (theme.getAttribute('href') == '../../css/pageKebab/pageKebab.css') {
+                            theme.setAttribute('href', '../../css/pageKebab/pageKebabAbou.css');
+                        }
+                    }
+                </script>
+			</div>
+		</div>
+        <div id="titleBody1">
+            <div id="titleSquare1">
+                <p class="title1">kebabo</p>
+            </div>
+        </div>
+        <div id="titleBody2">
+            <div id="titleSquare2">
+                <p class="title2">par wheelchair sam</p>
+            </div>
+        </div>
+        <div id="titleBody3">
+            <div id="titleSquare3"></div>
+        </div>
+        <div id="squareQEI">
+            <div id="squareQEISupport"></div>
+            <div id="squareQEIBody">
+                <p class="titleQEI">Ki est-il?</p>
+                <div id="cardFrame">
+                    <div id="card"></div>
+                </div>
+                <p class="subtitleQEI">Lé alpaca aixist pa, gloir a amogus amogus amogus amogus amogus</p>
+            </div>
+        </div>
+        <div id="squarePQ">
+            <div id="squarePQSupport"></div>
+            <div id="squarePQBody">
+                <p class="titleQEI">Pk kebabo?</p>
+                <div id="textFramePQ">
+                    <p class="textPQ">
+                        kebabo tro sigma
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        ri1 2 plus
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        skibidi toilet skibidi skibidi toilet
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="squareFK">
+            <div id="squareFKSupport"></div>
+            <div id="squareFKBody">
+                <p id="titleFK">kebabo kebab<br>issi</p>
+                <div id="frameFK">
+                    <a href="https://www.google.com/maps/place/Le+Campus/@43.5134767,5.4530892,52m/data=!3m1!1e3!4m6!3m5!1s0x12c98d38f0bcb481:0xc6606fd00cdc7d8!8m2!3d43.5134829!4d5.4529411!16s%2Fg%2F11fq894f5x?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target=”_blank”>
+                        <div id="frameButtonFK">
+                            <div id="backgroundFK">
+                                <p id="textFurkhan">Furkhan Kebab</p>
+                                <img id="imageFurkhan" src="../../images/imagesKebab/furkhanKebab.png" alt="Furkhan Kebab">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="theKebabBody">
+            <div id="skewer1"></div>
+            <div id="skewer2"></div>
+            <div id="theKebab1"></div>
+            <div id="theKebab2">
+                <p class="textKebab">kababo et mon smlawg, tro skibidi</p>
+            </div>
+            <div id="theKebab3">
+                <p class="textKebab">alpha male bi1 sigma ce quoicoubg</p>
+            </div>
+            <div id="theKebab4"></div>
+            <div id="theKebab5">
+                <p class="textKebab">provi1 2 la goon cave, il pratik le</p>
+            </div>
+            <div id="theKebab6">
+                <p class="textKebab">mewing avec ishowspeed é dj khaled</p>
+            </div>
+            <div id="theKebab7"></div>
+            <div id="theKebab8"></div>
+            <div id="theKebab9">
+                <p class="textKebab">ankha zone na pa 2 secré pour lui, parce kil</p>
+            </div>
+            <div id="theKebab10">
+                <p class="textKebab">et tro uncanny kan il parl le kumalala</p>
+            </div>
+            <div id="theKebab11">
+                <p class="textKebab">savesta avec keanu reeves</p>
+            </div>
+            <div id="theKebab12"></div>
+            <div id="theKebab13"></div>
+            <div id="theKebab14"></div>
+            <div id="theKebab15"></div>
+            <div id="theKebab16">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab17">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab18">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab19">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab20">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab21">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab22">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab23">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab24">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab25">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="theKebab26">
+                <p class="textKebab">amogus amogus amogus amogus</p>
+            </div>
+            <div id="skewer3"></div>
+        </div>
+        <div id="squareTunisien">
+            <div id="squareTunisienBody">
+                <p id="titleTunisien">lé tunisien pratik la fanum tax!?!</p>
+                <div id="frameTunisien">
+                    <div id="backgroundTunisien">
+                        <img id="imageTunisien" src="../../images/imagesKebab/leTunisien.png" alt="Le Tunisien">
+                    </div>
+                </div>
+                <p id="quoteTunisien">“le football il a changé”</p>
+                <p id="sourceTunisien">
+                    - pain bagna, average family guy funny<br>moments compilation with subway surfers<br>gameplay at the bottom enjoyer
+                </p>
+            </div>
+            <div id="squareTunisienSupport"></div>
+        </div>
+        <div id="arrowBody">
+            <div id="arrowLeftHead"></div>
+            <div id="arrowRightHead"></div>
+        </div>
+        <div id="giftContainer">
+            <a href="https://youtu.be/-y_rZtuieEc" target=”_blank”>
+                <img id="gift" src="../../images/imagesKebab/gift.png">
+            </a>
+            <video id="videoFelizNavidad" controls="controls">
+                <source src="../../videos/videosKebab/felizNavidad.mov">
+                <track label="Français" kind="subtitles" srclang="fr" src="../../videos/videosKebab/sous-titres/soustitresFelizNavidadBrainrot.vtt" default />
+            </video>
+        </div>
+    </body>
+</html>
