@@ -86,29 +86,32 @@ p {
 #ancrage:hover{
     background-color: #7D4728;
 }
-#fleche{
-    background-color: #E6F3FA;
-    height: 6em;
-    width: 1em;
-    margin: auto;
-}
-#teteDroiteFleche{
-    background-color: #E6F3FA;
-    height: 3em;
-    width: 1em;
-    rotate: 55deg;
+#fleche {
     position: relative;
-    bottom: 1.3em;
-    right: 0.95em;
-}
-#teteGaucheFleche{
+    display: inline-block;
+    width: 20px;
+    height: 75px;
     background-color: #E6F3FA;
-    height: 3em;
-    width: 1em;
-    rotate: -55deg;
-    position: relative;
-    bottom: 4.3em;
-    left: 0.95em;
+}
+
+#fleche::before, #fleche::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background-color: #E6F3FA;
+}
+
+#fleche::before {
+    top: -5px;
+    left: -1px;
+    rotate: 45deg;
+}
+
+#fleche::after {
+    top: -5px;
+    right: -1px;
+    rotate: -45deg;
 }
 #settings{
     background-color: #E6F3FA;
