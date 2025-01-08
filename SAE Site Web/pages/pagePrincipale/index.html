@@ -50,9 +50,7 @@
             </button>
             <script>
             let mybutton = document.getElementById("ancrage");
-            
             window.onscroll = function() {scrollFunction()};
-            
             function scrollFunction() {
               if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
@@ -60,7 +58,6 @@
                 mybutton.style.display = "none";
               }
             }
-            
             function topFunction() {
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
@@ -317,61 +314,74 @@
 			</div>
 			<form id="corpsFormulaire" method="POST" action="mailto:osansyp@gmail.com" enctype="text/plain">
 				<div id="squareQuestionNom">
-					<label for="nom">Nom</label><br>
+					<label for="nom">Nom</label>
+					<input id="nom"><br>
 				</div>
 				<input class="inputFormulaire" type="text" name="nom" value="" required><br>
 				<div id="squareQuestionPrenom">
-					<label for="prenom">Prénom</label><br>
+					<label for="prenom">Prénom</label>
+					<input id="prenom"><br>
 				</div>
 				<input class="inputFormulaire" type="text" name="prenom" value="" required><br>
 				<div id="squareQuestionMail">
-					<label for="adresseMail">Adresse Mail</label><br>
+					<label for="adresseMail">Adresse Mail</label>
+					<input id="adresseMail"><br>
 				</div>
 				<input class="inputFormulaire" type="email" name="adresseMail" value="" required><br>
 				<div id="squareQuestionNTel">
-					<label for="nTelephone">N° de Téléphone</label><br>
+					<label for="nTelephone">N° de Téléphone</label>
+					<input id="nTelephone"><br>
 				</div>
 				<input class="inputFormulaire" type="tel" name="nTelephone" value="" pattern="[0-9]{10}" required><br>
 				<div id="squareQuestionNCarte">
-					<label for="nCarte">N° de Carte Bleue</label><br>
+					<label for="nCarte">N° de Carte Bleue</label>
+					<input id="nCarte"><br>
 				</div>
 				<input class="inputFormulaire" type="number" name="nCarte" value="" required><br>
 				<div id="squareQuestionDateExp">
-					<label for="dateExp">Date d’expiration</label><br>
+					<label for="dateExp">Date d’expiration</label>
+					<input id="dateExp"><br>
 				</div>
 				<input class="inputFormulaire" type="text" name="dateExp" value="" required><br>
 				<div id="squareQuestionCVV">
-					<label for="cVV">CVV</label><br>
+					<label for="cVV">CVV</label>
+					<input id="cVV"><br>
 				</div>
 				<input class="inputFormulaire" type="number" name="cVV" value="" required><br>
 				<div id="squareQuestionNSecSoc">
-					<label for="nSecSoc">N° de Sécurité Sociale</label><br>
+					<label for="nSecSoc">N° de Sécurité Sociale</label>
+					<input id="nSecSoc"><br>
 				</div>
 				<input class="inputFormulaire" type="number" name="nSecSoc" value="" required><br>
 				<div id="squareQuestionAdrIP">
-					<label for="adresseIP">Adresse IP</label><br>
+					<label for="adresseIP">Adresse IP</label>
+					<input id="adresseIP"><br>
 				</div>
 				<input class="inputFormulaire" type="text" name="adresseIP" value="" required><br>
 				<div id="squareQuestionEmpCofFor">
-					<label for="empCofFor">Emplacement du coffre fort familial</label><br>
+					<label for="empCofFor">Emplacement du coffre fort familial</label>
+					<input id="empCofFor"><br>
 				</div>
 				<input class="inputFormulaire" type="text" name="empCofFor" value="" required><br>
 				<div id="squareQuestionSponsor">
-					<label for="sponsor">Souhaitez-vous recevoir des promotions de la part de nos sponsors?</label><br>
+					<label for="sponsor">Souhaitez-vous recevoir des promotions de la part de nos sponsors?</label>
+					<input id="sponsor"><br>
 				</div>
 				<div class="squareRadio">
-					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui" required><label for="reponse1">Oui</label><br>
+					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui" required><label for="reponse1">Oui</label>
+					<input id="reponse1"><br>
 				</div>
 				<div class="squareRadio">
-					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui"><label for="reponse2">Oui</label><br>
+					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui"><label for="reponse2">Oui</label>
+					<input id="reponse2"><br>
 				</div>
 				<div id="squareMessageExtra">
-					<label for="msgExtra">Message extra de votre part:</label><br>
+					<label for="msgExtra">Message extra de votre part:</label>
+					<input id="msgExtra"><br>
 				</div>
 				<textarea class="inputFormulaire" rows="5" cols="50" placeholder="Faites-nous tout savoir"></textarea><br>
 				<input type="submit" value="Envoyer">
 			</form>
-			</div>
 		</div>
     </body>
 </html>
