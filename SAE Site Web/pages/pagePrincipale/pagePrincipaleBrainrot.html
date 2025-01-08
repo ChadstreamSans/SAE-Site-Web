@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<!-- Favicon -->
 		<link rel="icon" href="../../images/imagesPagePrincipale/favicon.ico">
+		
 		<title>animo fantastik</title>
+
+		<!-- Charset -->
 		<meta charset="utf-8">
+
+		<!-- Meta -->
 		<meta name="author" content="GRM">
 		<meta name="description" content="French brainrot version of the main page">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Stylesheet -->
 		<link id="theme" rel="stylesheet" type="text/css" href="../../css/pagePrincipale/pagePrincipale.css">
 	</head>
 	<body>
-		<img src="../../images/imagesPagePrincipale/lesPrimes.png" alt="Les Primes" id="lesPrimes">
-        <button onclick="topFunction()" id="ancrage">
-            <div id="fleche">
-                <div id="teteDroiteFleche"></div>
-                <div id="teteGaucheFleche"></div>
-            </div>
-        </button>
-        <script>
-            let mybutton = document.getElementById("ancrage");
+	    <!-- Header image -->
+	    <img src="../../images/imagesPagePrincipale/lesPrimes.png" alt="Les Primes" id="lesPrimes">
+            <button onclick="topFunction()" id="ancrage">
+                <div id="fleche">
+                    <div id="teteDroiteFleche"></div>
+                    <div id="teteGaucheFleche"></div>
+                </div>
+            </button>
+            <script>
+                let mybutton = document.getElementById("ancrage");
             
-            window.onscroll = function() {scrollFunction()};
+                window.onscroll = function() {scrollFunction()};
             
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
             
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-            </script>
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
 		<div id="settings">
 			<div id="squareLangue">
 				<p id="langueTitre">ké tu parl:</p>
@@ -51,26 +60,26 @@
 				</a>
 			</div>
 			<div id="squareAbou">
-                <button onclick="toggleThemeLight()">jour</button>
-                <script>
-                    function toggleThemeLight() {
-                        let theme = document.getElementById('theme');
+                    <button onclick="toggleThemeLight()">jour</button>
+                    <script>
+                        function toggleThemeLight() {
+                            let theme = document.getElementById('theme');
 
-                        if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipaleAbou.css') {
-                            theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipale.css');
+                            if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipaleAbou.css') {
+                                theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipale.css');
+                            }
                         }
-                    }
-                </script>
-                <button onclick="toggleThemeDark()">nui</button>
-                <script>
-                    function toggleThemeDark() {
-                        let theme = document.getElementById('theme');
+                    </script>
+                    <button onclick="toggleThemeDark()">nui</button>
+                    <script>
+                        function toggleThemeDark() {
+                            let theme = document.getElementById('theme');
 
-                        if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipale.css') {
-                            theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipaleAbou.css');
+                            if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipale.css') {
+                                theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipaleAbou.css');
+                            }
                         }
-                    }
-                </script>
+                    </script>
 			</div>
 		</div>
 		<div id="titleSquare">
