@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -5,254 +6,76 @@
 		<title>SAE CAPYBARA</title>
 		<meta charset="utf-8">
         <link rel="stylesheet" href="../saesitecapy/theme/lightThemeCapybara.css">
-	</head>
-
-	<body>
-    <main>
-        <div id="PMHeader"></div>
-            <div id="pageHeader">
-                <img id="PMImage" src="../saesitecapy/capybarabody.jpg"
-                alt="profile du Calamité">
-                <div id="menu">
-                    <div class="menuHorizontalLine"></div>
-                    <div id="menuContent">
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pagePrincipale/index.html">
-                            <p class="menuText">L’extraordinaire catalogue d’Animaux Fantastiques</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pageKebab/pageKebab.html">
-                            <p class="menuText">Le Kebab</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pageCapybara/pageCapybara.html">
-                            <p class="menuText">prout Mammouth</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                    </div>
-                    <div class="menuHorizontalLine"></div>
-                </div>
-            </div>
-            <button onclick="topFunction()" id="ancrage">
-                <span id="fleche"></span>
-            </button>
-            <script>
-                let mybutton = document.getElementById("ancrage");
-                
-                window.onscroll = function() {scrollFunction()};
-                
-                function scrollFunction() {
-                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                  } else {
-                    mybutton.style.display = "none";
-                  }
-                }
-                
-                function topFunction() {
-                  document.body.scrollTop = 0;
-                  document.documentElement.scrollTop = 0;
-                }
-            </script>
-    <div id="settings">
-        <div id="squareLangue">
-            <p id="langueTitre">Langue:</p>
-            <a href="pageCapybara.html">
-                <p class="langueChoix">Français</p>
-            </a>
-            <div class="langueSeparateur"></div>
-            <a href="pageCapybaraPaella.html">
-                <p class="langueChoix">Paella</p>
-            </a>
-            <div class="langueSeparateur"></div>
-            <a href="pageCapybaraBrainrot.html">
-                <p class="langueChoix">Brainrot</p>
-            </a>
-        </div>
-        <div id="squareAbou">
-            <button id="buttonTheme">Thème</button>
-            <script src='script/themeCapybara.js' defer>
-                const buttonThemeChanger = document.querySelector('#buttonTheme');
-                console.log(buttonThemeChanger);
-
-                buttonThemeChanger.addEventListener('click', function() {
-                const theme = document.querySelector('#theme');
-                if (theme.href.includes('light')) {
-                    theme.href = theme.href.replace('light', 'dark');
-
-                    return ;
-                }
-
-                theme.href = theme.href.replace('dark', 'light');
-                });
-            </script>
-        </div>
-    </div>
-    <div id="titleBody1">
-        <div id="titleSquare1">
-            <p class="title1">Le Capybra de l'ABYSSE
-    </div>
-    <div id="titleBody2">
-        <div id="titleSquare2">
-            <p class="title2">Le Gars Cool de la Nature</p>
-        </div>
-    </div>
-    <div id="titleBody3">
-        <div id="titleSquare3">
-            <p class="title3">Par  Namdas  « Cinéma Le Renoir » Blablacar</p>
-        </div>
-    </div>
-    <div id="squareQEI">
-        <div id="squareQEIBody">
-            <p class="titleQEI">Qui est-il?</p>
-            <p class="subtitleQEI">Dans les recoins les plus profonds et les plus sombres du cosmos, là où la lumière elle-même craignait de s'aventurer, l'Abysse prospérait. 
-                C'était un vide éternel, un lieu de nuit sans fin et de mystères insondables.
-                De cette obscurité primordiale, une entité émergea, un improbable phare de puissance sereine : le Capybara de l'Abysse.<br>
-                Né sans but, le Capybara dérivait dans le vide, sa présence étant un paradoxe de calme au milieu du chaos.
-                Les anciens Dieux, qui régnaient autrefois sur les ombres, tremblaient à la simple pensée de cette créature.
-                Car le regard du Capybara était dépourvu de tout autre chose que de ténèbres, un regard qui perçait le voile de la réalité elle-même.
-            </p>
-            <div id="cardFrame">
-                <div id="card" height="470" width="370">
-                    <img id="imageCard" src="../saesitecapy/imageB.png" alt="Capy Card" height="470" width="370" >
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="squareCG">
-        <div id="squareCGBody">
-            <div id="CGImage1">
-                <img id="imageCap" src="../saesitecapy/capysunset.png" alt="Chill Capy" height="440" width="610">
-            </div> 
-            <div id="CGImage2">
-                <img id="imageEqu" src="../saesitecapy/equalR.png" alt="Equal" height="200" width="200">
-            </div> 
-            <div id="CGImage3">
-                <img id="imageChill" src="../saesitecapy/chillguy.png" alt="Chill Guy" height="500" width="500">
-            </div> 
-        </div>
-    </div>
-    <div id="squareDes">
-        <div id="squareDesBody" content="width=device-width, initial-scale=1">
-            <style>
+        <style>
             /* width */
             ::-webkit-scrollbar {
             width: 10px;
             }
-
             /* Track */
             ::-webkit-scrollbar-track {
             box-shadow: inset 0 0 5px #E7DBCB; 
             border-radius: 10px;
             }
-            
             /* Handle */
             ::-webkit-scrollbar-thumb {
             background: #50402D; 
             border-radius: 10px;
             }
-
+    
             /* Handle on hover */
             ::-webkit-scrollbar-thumb:hover {
             background: #2a2214; 
             }
-            </style>
-            <p class="titleDes">Description de L'entité</p>           
-            <p class="subtitleQEI">Le Capybara des Abysses : une entité énigmatique <br>
-
-                Émergeant du cœur des Abysses, le Capybara des Abysses ne ressemblait à aucune créature observée dans les royaumes connus. Il incarnait l'essence même du vide, une manifestation vivante de l'obscurité et de la tranquillité. Son apparence était un mélange de familier et d'extraordinaire, une vision qui apaisait et troublait à la fois ceux qui le regardaient.<br>
-                
-                La fourrure du Capybara était d'un noir profond et velouté, absorbant toute la lumière qui la touchait, créant une aura d'obscurité presque éthérée autour de lui. Chaque brin de fourrure semblait scintiller d'une lueur faible et irisée, rappelant les étoiles lointaines scintillant dans le ciel nocturne. Cette luminescence subtile donnait au Capybara un éclat surnaturel, comme s'il s'agissait d'un être céleste enveloppé d'ombres.<br>
-                
-                Ses yeux étaient peut-être la caractéristique la plus frappante. C'étaient de vastes bassins d'obscurité infinis, reflétant l'étendue infinie de l'Abysse. Les contempler était comme scruter le cœur du vide, une expérience fascinante et désorientante. Malgré leur profondeur intimidante, les yeux du Capybara dégageaient une profonde sensation de calme, comme s'ils assuraient à ceux qui les regardaient qu'il y avait la paix dans l'obscurité.<br>
-                
-                La taille de la créature était imposante, plus grande que celle de n'importe quel capybara ordinaire. Son corps était robuste et musclé, mais il se déplaçait avec une grâce qui démentait sa masse. Chaque pas était mesuré et silencieux, comme s'il flottait juste au-dessus du sol. Ce mouvement silencieux ajoutait à sa mystique, le faisant ressembler à un fantôme glissant dans l'Abysse.<br>
-                
-                En y regardant de plus près, la fourrure du Capybara révélait des motifs complexes, presque comme des runes anciennes gravées dans la trame du vide. Ces motifs pulsaient faiblement d'une lumière intérieure, faisant allusion à la connaissance et au pouvoir arcaniques contenus dans cette créature énigmatique. C'était comme si l'essence même de l'Abysse avait été inscrite sur son être, un témoignage de sa profonde connexion avec le royaume des ombres.<br>
-                
-                La présence du Capybara avait un effet tangible sur son environnement. L'air environnant semblait s'être calmé, les ombres toujours changeantes se calmant dans son voisinage. Il dégageait une aura de tranquillité, un contraste serein avec l'énergie chaotique de l'Abysse. Les créatures du vide, du plus petit scarabée d'ombre aux puissants léviathans du vide, étaient attirées par cette aura, trouvant du réconfort dans la présence du Capybara.<br>
-            </p>
-        </div>
-    </div>
-    <div id="squarePQ">
-        <div id="squarePQBody">
-            <p class="titlePQ">Pourquoi Le Capybara?</p>
-            <p class="textPQ">Parce que Pourquoi Pas ? :)
-        </div>
-    </div>
-    <div id="squareFK">
-        <div id="squareFKSupport"></div>
-        <div id="squareFKBody">
-            <p id="titleFK">Goûtez le meilleur kebab ici!</p>
-            <div id="frameFK">
-                <a href="https://www.google.com/maps/place/Le+Campus/@43.5134767,5.4530892,52m/data=!3m1!1e3!4m6!3m5!1s0x12c98d38f0bcb481:0xc6606fd00cdc7d8!8m2!3d43.5134829!4d5.4529411!16s%2Fg%2F11fq894f5x?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target=”_blank”>
-                    <div id="frameButtonFK">
-                        <div id="backgroundFK">
-                            <p id="textFurkhan">Furkhan Kebab</p>
-                            <img id="imageFurkhan" src="../../images/imagesKebab/furkhanKebab.png" alt="Furkhan Kebab">
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</html><!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<link rel="icon" href="../saesitecapy/favicon.ico">
-		<title>SAE CAPYBARA</title>
-		<meta charset="utf-8">
-        <link rel="stylesheet" href="../saesitecapy/theme/lightThemeCapybara.css">
+        </style>
 	</head>
-
 	<body>
     <main>
         <div id="PMHeader"></div>
-            <div id="pageHeader">
-                <img id="PMImage" src="../saesitecapy/capybarabody.jpg"
-                alt="profile du Calamité">
-                <div id="menu">
-                    <div class="menuHorizontalLine"></div>
-                    <div id="menuContent">
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pagePrincipale/index.html">
-                            <p class="menuText">L’extraordinaire catalogue d’Animaux Fantastiques</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pageKebab/pageKebab.html">
-                            <p class="menuText">Le Kebab</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                        <a href="../pageCapybara/pageCapybara.html">
-                            <p class="menuText">prout Mammouth</p>
-                        </a>
-                        <div class="menuVerticalLine"></div>
-                    </div>
-                    <div class="menuHorizontalLine"></div>
+        <div id="pageHeader">
+            <img id="PMImage" src="../saesitecapy/capybarabody.jpg"
+            alt="profile du Calamité">
+            <div id="menu">
+                <div class="menuHorizontalLine"></div>
+                <div id="menuContent">
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pagePrincipale/index.html">
+                        <p class="menuText">L’extraordinaire catalogue d’Animaux Fantastiques</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pageKebab/pageKebab.html">
+                        <p class="menuText">Le Kebab</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
+                    <a href="../pageCapybara/pageCapybara.html">
+                        <p class="menuText">prout Mammouth</p>
+                    </a>
+                    <div class="menuVerticalLine"></div>
                 </div>
+                <div class="menuHorizontalLine"></div>
             </div>
-            <button onclick="topFunction()" id="ancrage">
-                <span id="fleche"></span>
-            </button>
-            <script>
-                let mybutton = document.getElementById("ancrage");
-                
-                window.onscroll = function() {scrollFunction()};
-                
-                function scrollFunction() {
-                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                  } else {
-                    mybutton.style.display = "none";
-                  }
-                }
-                
-                function topFunction() {
-                  document.body.scrollTop = 0;
-                  document.documentElement.scrollTop = 0;
-                }
-            </script>
-    <div id="settings">
+        </div>
+        <button onclick="topFunction()" id="ancrage">
+            <span id="fleche"></span>
+        </button>
+        <script>
+            let mybutton = document.getElementById("ancrage");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+            
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <div id="settings">
         <div id="squareLangue">
             <p id="langueTitre">Langue:</p>
             <a href="pageMammouth.html">
@@ -269,26 +92,14 @@
         </div>
         <div id="squareAbou">
             <button id="buttonTheme">Thème</button>
-            <script src='script/themeCapybara.js' defer>
-                const buttonThemeChanger = document.querySelector('#buttonTheme');
-                console.log(buttonThemeChanger);
-
-                buttonThemeChanger.addEventListener('click', function() {
-                const theme = document.querySelector('#theme');
-                if (theme.href.includes('light')) {
-                    theme.href = theme.href.replace('light', 'dark');
-
-                    return ;
-                }
-
-                theme.href = theme.href.replace('dark', 'light');
-                });
-            </script>
+            <script src='script/themeCapybara.js' defer></script>
+            </div>
         </div>
-    </div>
+    </main>
     <div id="titleBody1">
         <div id="titleSquare1">
-            <p class="title1">Le Capybra de l'ABYSSE
+            <p class="title1">Le Capybra de l'ABYSSE</p>
+        </div>
     </div>
     <div id="titleBody2">
         <div id="titleSquare2">
@@ -311,7 +122,7 @@
                 Car le regard du Capybara était dépourvu de tout autre chose que de ténèbres, un regard qui perçait le voile de la réalité elle-même.
             </p>
             <div id="cardFrame">
-                <div id="card" height="470" width="370">
+                <div id="card">
                     <img id="imageCard" src="../saesitecapy/imageB.png" alt="Capy Card" height="470" width="370" >
                 </div>
             </div>
@@ -332,29 +143,6 @@
     </div>
     <div id="squareDes">
         <div id="squareDesBody" content="width=device-width, initial-scale=1">
-            <style>
-            /* width */
-            ::-webkit-scrollbar {
-            width: 10px;
-            }
-
-            /* Track */
-            ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px #E7DBCB; 
-            border-radius: 10px;
-            }
-            
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-            background: #50402D; 
-            border-radius: 10px;
-            }
-
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-            background: #2a2214; 
-            }
-            </style>
             <p class="titleDes">Description de L'entité</p>           
             <p class="subtitleQEI">Le Capybara des Abysses : une entité énigmatique <br>
 
