@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="icon" href="../../images/imagesPagePrincipale/favicon.ico">
+		<title>animo fantastik</title>
+		<meta charset="utf-8">
+		<meta name="author" content="GRM">
+		<meta name="description" content="French version of the main page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link id="theme" rel="stylesheet" type="text/css" href="../../css/pagePrincipale/pagePrincipale.css">
+	</head>
+	<body>
+		<img src="../../images/imagesPagePrincipale/lesPrimes.png" alt="Les Primes" id="lesPrimes">
+        <button onclick="topFunction()" id="ancrage">
+            <div id="fleche">
+                <div id="teteDroiteFleche"></div>
+                <div id="teteGaucheFleche"></div>
+            </div>
+        </button>
+        <script>
+            let mybutton = document.getElementById("ancrage");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+		<div id="settings">
+			<div id="squareLangue">
+				<p id="langueTitre">ké tu parl:</p>
+				<a href="index.html">
+					<p class="langueChoix">crouassan</p>
+				</a>
+				<div class="langueSeparateur"></div>
+				<a href="pagePrincipalePaella.html">
+					<p class="langueChoix">ananas</p>
+				</a>
+				<div class="langueSeparateur"></div>
+				<a href="pagePrincipaleBrainrot.html">
+					<p class="langueChoix">fortnit</p>
+				</a>
+			</div>
+			<div id="squareAbou">
+                <button onclick="toggleThemeLight()">jour</button>
+                <script>
+                    function toggleThemeLight() {
+                        let theme = document.getElementById('theme');
+
+                        if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipaleAbou.css') {
+                            theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipale.css');
+                        }
+                    }
+                </script>
+                <button onclick="toggleThemeDark()">nui</button>
+                <script>
+                    function toggleThemeDark() {
+                        let theme = document.getElementById('theme');
+
+                        if (theme.getAttribute('href') == '../../css/pagePrincipale/pagePrincipale.css') {
+                            theme.setAttribute('href', '../../css/pagePrincipale/pagePrincipaleAbou.css');
+                        }
+                    }
+                </script>
+			</div>
+		</div>
+		<div id="titleSquare">
+			<p class="titrePage2">le skibidi catalog d</p>
+			<p class="titrePage1">animo fantastik</p>
+			<p class="titrePage2">2 Sylvain Pierre Durif</p>
+			<p class="titrePage3">é c 3 skibidi gyat</p>
+		</div>
+		<div id="titleSquare2">
+			<p class="titrePage2">avek...</p>
+		</div>
+		<div id="mainSquareTriangle1">
+			<div id="triangleBlocker1"></div>
+		</div>
+		<div id="mainSquareBackground">
+			<div id="mainSquare2">
+				<p class="titreAnimal">ohio prout mammouth</p>
+				<p class="titreAnimal">kebabo</p>
+				<p class="titreAnimal">poilu</p>
+			</div>
+			<div id="mainSquare">
+				<div class="squareCornerExtULM">
+					<div class="squareCornerIntULM"></div>
+				</div>
+				<div class="squareCornerExtURM">
+					<div class="squareCornerIntURM"></div>
+				</div>
+				<div class="squareCornerExtLLM">
+					<div class="squareCornerIntLLM"></div>
+				</div>
+				<div class="squareCornerExtLRM">
+					<div class="squareCornerIntLRM"></div>
+				</div>
+				<div class="squareCornerExtULK">
+					<div class="squareCornerIntULK"></div>
+				</div>
+				<div class="squareCornerExtURK">
+					<div class="squareCornerIntURK"></div>
+				</div>
+				<div class="squareCornerExtLLK">
+					<div class="squareCornerIntLLK"></div>
+				</div>
+				<div class="squareCornerExtLRK">
+					<div class="squareCornerIntLRK"></div>
+				</div>
+				<div class="squareCornerExtULC">
+					<div class="squareCornerIntULC"></div>
+				</div>
+				<div class="squareCornerExtURC">
+					<div class="squareCornerIntURC"></div>
+				</div>
+				<div class="squareCornerExtLLC">
+					<div class="squareCornerIntLLC"></div>
+				</div>
+				<div class="squareCornerExtLRC">
+					<div class="squareCornerIntLRC"></div>
+				</div>
+				<div id="mainSquareSupport">
+					<a href="../pageMammouth/pageMammouth.html">
+						<div id="miniMainSquareMammouth">
+							<img class="carte" src="../../images/imagesPagePrincipale/carteMammouth.png" alt="Carte prout mammouth">
+						</div>
+					</a>
+					<a href="../pageKebab/pageKebab.html">
+						<div id="miniMainSquareKebab">
+							<img class="carte" src="../../images/imagesPagePrincipale/carteKebab.png" alt="Carte Kebab">
+						</div>
+					</a>
+					<a href="../pageCapybara/pageCapybara.html">
+						<div id="miniMainSquareCapybara">
+							<img class="carte" src="../../images/imagesPagePrincipale/carteCapybara.png" alt="Carte Capybara">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="mainSquareTriangle2">
+			<div id="triangleBlocker2"></div>
+		</div>
+		<div id="squareEquipe">
+			<p class="equipeDerriere">Ekip (aicri par notr jeun stajièr)</p>
+		</div>
+		<div class="cartePresentation">
+			<div class="cadrePhoto">
+				<img class="portrait" src="../../images/imagesPagePrincipale/sylvain.png" alt="Portait Sylvain Pierre Durif">
+			</div>
+			<div id="cadreTexteSPD">
+				<div id="cadreTitreSPD">
+					<p class="titrePage2">Sylvain « Le Christ Cosmique » Pierre Durif</p>
+				</div>
+				<p class="lore">
+					We Maestwo en pewsonnye, ^w^ iw est we *notices buldge* chef d’owchestwe dewwièwe w’extwaowdianyiwe catawogue d’Anyimaux Fantastiques. sa >w< passion pouw wes anyimaux est p-pwus gwand que cewwe de tous wes empwoyés de PETA wéunyis, et iw a un supew chien baptisé Wusseww. *twerks* Ex-mécanyicien, iw aspiwe à devenyiw un a-acteuw en p-pwus d’écwiwe *starts twerking* we *notices buldge* catawogue, *screeches* w’oeuvwe de sa vie. I-Iw aime wa >w< vodka-anyanyas, ainsi UwU que wegawdew wa >w< pwuie t-tombew. I-Iw s’agit aussi *starts twerking* d’un gwand fanyatique du mewing, et son hobby c’est de postew des weews suw TikTok suw comment devenyiw un j-j-jeunye entwepwenyeuw pwospèwe.
+				</p>
+			</div>
+		</div>
+		<div class="cartePresentation">
+			<div id="cadreTexteTT">
+				<div id="cadreTitreTT">
+					<p class="titrePage2">Thomas Topesto</p>
+				</div>
+				<p class="lore">
+					I-Iw était unye fois, dans unye contwée twès wointainye, un saucisson au chocowat sauvage fit son appawition. sa >w< détewminyation était t-tewwe qu’iw vouwait wétabwiw we *notices buldge* second owdwe de wa >w< Mouswinye, *looks at you* diwigé paw we *notices buldge* fameux Thomas Topesto.
+Afin de pawvenyiw à ses fins, iw pouvait comptew suw w’aide *boops your nose* de son fidèwe ami ^-^ Gowdon Fweeman *twerks* de Hawf-Wife. C’est ainsi UwU qu’iws pawtiwent en d-diwection de w’usinye ;;w;; de wa >w< Mouswinye *huggles tightly* afin de wewancew wa >w< pwoduction de bawwe pwotéinées goût Vodka Anyanyas.
+Mais de nyombweux obstacwes se dwessèwent suw weuw chemin, comme we *notices buldge* w-w-woi Dagobewt, qui avait sa cuwotte à w’envews, weuw demandait des pots de Danyonye *looks at you* de temps *blush* à autwe, awows iw fût wapidement évincé incessament *sweats* sous peu wows de w’antépényuwitème du suwwendemain d’antan Jadis.
+En concwusion, wa >w< magie de wa >w< Mouswinye *huggles tightly* couwat à fwot et c’est ainsi UwU que Thomas Topesto pawvenya à fondew we *notices buldge* second owdwe.
+				</p>
+			</div>
+			<div class="cadrePhoto">
+				<img class="portrait" src="../../images/imagesPagePrincipale/thomas.png" alt="Portrait Thomas Topesto">
+			</div>
+		</div>
+		<div class="cartePresentation">
+			<div class="cadrePhoto">
+				<img class="portrait" src="../../images/imagesPagePrincipale/kennochi.png" alt="Portrait Kennochi Seishin">
+			</div>
+			<div id="cadreTexteKS">
+				<div id="cadreTitreKS">
+					<p class="titrePage2">Kennochi « Chadstream Sans » Seishin</p>
+				</div>
+				<p class="lore">
+					I-Iw sait que quand wes souvenyiws sont bwisés, wa >w< véwité n'est pas dite, m-mais qu’iw nye faut *blushes* jamais oubwiew son nyom. quand *sweats* wa >w< saison ou wa >w< waison sont inconnyues, iw se tient debout, sa wame >w< en main. Affwonté à des wieux désowés, sans aucunye twace, c'est ^w^ seuwement we *notices buldge* vent fwoid qu’iw wessent. I-Iw n’aime pas devoiw se wevew et se battwe, caw :3 wa >w< seuwe chose qu’iw sait vwaiment, c’est qu’iw y auwa du sang vewsé. quand *sweats* w’homme dans we *notices buldge* miwoiw hoche wa >w< tête, we *notices buldge* seuw qui westewa >w< s'éwancewa suw we *notices buldge* dos du dwagon, *walks away* pawce que wes montagnyes nye wendent pas ce q-qu'ewwes pwennyent. «-« Oh nyon », se dit-iw, ^-^ caw :3 iw y auwa du sang vewsé, et c'est ^w^ wa >w< seuwe chose qu’iw ait jamais connyue. Pouw évitew de pewdwe son i-identité, iw se demande «-« Suis-je devenyu fou!? », et pouw twouvew wa >w< véwité en face de wui, iw escawade wa >w< chaînye *whispers to self* de montagnyes, w-w-wegawdant vews we *notices buldge* bas depuis w’hauteuw mowtewwe pouw se wappewew pouwquoi iw se bat.
+				</p>
+			</div>
+		</div>
+		<div class="cartePresentation">
+			<div id="cadreTexteNB">
+				<div id="cadreTitreNB">
+					<p class="titrePage2">Namdas  « Cinéma Le Renoir » Blablacar</p>
+				</div>
+				<p class="lore">
+					fwash OwO S-S-Spéciaw :
+Sitéwieuw : Bonjouw. *sees bulge* Aujouwd'hui, de nyouvewwes infowmations concewnyant w'Homme de wa >w< Déchawge de 10 Heuwes ont émewgé.
+Sitéwieuw :  Unye caméwa a été twouvée dans un pawc nyon woin de Thundewstowm.
+Sitéwieuw *sees bulge* :  Wes images montwent un nyombwe inconnyu de pewsonnyes tentant de twaquew w'Homme de wa >w< Déchawge de 10 Heuwes.
+Sitéwieuw: *starts twerking*  I-Iw sembwe ^w^ que cet homme *cries* aime se cachew dans w'ombwe. donc, *walks away* s-si vous vous wetwouvez dans unye situation où iw vous attaque, évitez de vous aventuwew dans wes zonyes sombwes.
+Sitéwieuw:  Wa d-d-discwétion des spectateuws est fowtement *runs away* wecommandée, caw :3 beaucoup twouvewont *cries* cette vidéo d-déwangeante. Voici wes images fouwnyies. wa >w< vidéo se tewminye
+
+Dans wes wecoins sombwes et oubwiés du monde, wà où wa >w< wumièwe peinye à pewcew, vit un homme *cries* mystéwieux connyu *cries* sous we *notices buldge* nyom de de “ w'Homme de wa >w< Déchawge de 10 Heuwes” ou Nyamdas. x3 Son nyom, *huggles tightly* un p-pawindwome de "Sadman", *sweats* wefwète wa >w< twistesse et wa >w< désowation qu'iw s-sème suw son passage. pewsonnye *screeches* nye connyaît son véwitabwe v-v-visage nyi (・`ω´・) ses owiginyes, m-mais tous ceux qui ont cwoisé *runs away* son chemin pawtagent unye m-même histoiwe UwU d'howweuw et de fatawité.
+Nyamdas est un homme *cries* vêtu de n-nyoiw, t-toujouws envewoppé dans unye cape sombwe qui sembwe ^w^ absowbew wa >w< wumièwe ewwe-même. I-Iw hante wes wieux abandonnés, wes wuewwes obscuwes et wes fowêts denses où w'ombwe wègnye en maîtwe. Son pouvoiw suwnyatuwew est wedouté : iw peut décwenchew unye "cawamité" suw ceux qui osent we *notices buldge* pouwchassew, weuw infwigeant unye mawchance mowtewwe. ceux *sees bulge* qui tentent de we *notices buldge* captuwew finyissent *huggles tightly* souvent paw wencontwew unye fin twagique, weuws effowts wécompensés paw des accidents étwanges et fataws.
+Wes histoiwes *cries* wacontées suw Nyamdas abondent de témoignyages *whispers to self* de chasseuws de pwimes, :3 de powiciews *screeches* et d'aventuwiews devenyus fous apwès avoiw subi sa mawédiction. *runs away* Wes wawes suwvivants ;;w;; pawwent *sees bulge* de visions cauchemawdesques, de pièges *whispers to self* invisibwes et de wa >w< sensation oppwessante d'êtwe constamment suwveiwwé..
+				</p>
+			</div>
+			<div class="cadrePhoto">
+				<img class="portrait" src="../../images/imagesPagePrincipale/namdas.png" alt="Portrait Namdas Blablacar">
+			</div>
+		</div>
+		<div id="squareFurkhan">
+			<a href="https://www.google.com/maps/place/Le+Campus/@43.5134767,5.4530892,52m/data=!3m1!1e3!4m6!3m5!1s0x12c98d38f0bcb481:0xc6606fd00cdc7d8!8m2!3d43.5134829!4d5.4529411!16s%2Fg%2F11fq894f5x?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target=”_blank”>
+				<div id="cadreFurkhan">
+					<div id="fondFurkhan">
+						<p id="texteFurkhan">Furkhan Kebab</p>
+						<img id="imageFurkhan" src="../../images/imagesPagePrincipale/furkhanKebab.png" alt="Furkhan Kebab">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div id="squareFormulaire">
+			<div id="titreFormulaire">
+				<p class="equipeDerriere">Rejoin nou OwO</p>
+			</div>
+			<form id="corpsFormulaire" method="POST" action="mailto:osansyp@gmail.com" enctype="text/plain">
+				<div id="squareQuestionNom">
+					<label for="nom">Nom (Om nom nom)</label><br>
+				</div>
+				<input class="inputFormulaire" type="text" name="nom" value="" required><br>
+				<div id="squareQuestionPrenom">
+					<label for="prenom">B6-80</label><br>
+				</div>
+				<input class="inputFormulaire" type="text" name="prenom" value="" required><br>
+				<div id="squareQuestionMail">
+					<label for="adresseMail">le gmail stp</label><br>
+				</div>
+				<input class="inputFormulaire" type="email" name="adresseMail" value="" required><br>
+				<div id="squareQuestionNTel">
+					<label for="nTelephone">don ton 06 madam</label><br>
+				</div>
+				<input class="inputFormulaire" type="tel" name="nTelephone" value="" pattern="[0-9]{10}" required><br>
+				<div id="squareQuestionNCarte">
+					<label for="nCarte">plata o plomo</label><br>
+				</div>
+				<input class="inputFormulaire" type="number" name="nCarte" value="" required><br>
+				<div id="squareQuestionDateExp">
+					<label for="dateExp">skibidi creeper oh no</label><br>
+				</div>
+				<input class="inputFormulaire" type="text" name="dateExp" value="" required><br>
+				<div id="squareQuestionCVV">
+					<label for="cVV">UwU?</label><br>
+				</div>
+				<input class="inputFormulaire" type="number" name="cVV" value="" required><br>
+				<div id="squareQuestionNSecSoc">
+					<label for="nSecSoc">ton num 2 gyat</label><br>
+				</div>
+				<input class="inputFormulaire" type="number" name="nSecSoc" value="" required><br>
+				<div id="squareQuestionAdrIP">
+					<label for="adresseIP">poisson penis</label><br>
+				</div>
+				<input class="inputFormulaire" type="text" name="adresseIP" value="" required><br>
+				<div id="squareQuestionEmpCofFor">
+					<label for="empCofFor">emplaceman du poisson penis</label><br>
+				</div>
+				<input class="inputFormulaire" type="text" name="empCofFor" value="" required><br>
+				<div id="squareQuestionSponsor">
+					<label for="sponsor">et-ce ke prout mammouth et mailleure ke skibidi toilet?</label><br>
+				</div>
+				<div class="squareRadio">
+					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui" required><label for="reponse1">ui</label><br>
+				</div>
+				<div class="squareRadio">
+					<input class="sponsorButton" type="radio" name="reponseSponsor" value="oui"><label for="reponse2">huître</label><br>
+				</div>
+				<div id="squareMessageExtra">
+					<label for="msgExtra">di cke tu ve</label><br>
+				</div>
+				<textarea class="inputFormulaire" rows="5" cols="50" placeholder="Faites-nous tout savoir"></textarea><br>
+				<input type="submit" value="Envoyer">
+			</form>
+			</div>
+		</div>
+    </body>
+</html>
